@@ -1,30 +1,24 @@
-#Driver Drowsiness Detection System
-
-Detect drowsiness in drivers using a simple webcam-based system to increase road safety.
-
-Drowsiness Detection <!-- You can replace this with the path to an image or logo -->
+Driver Drowsiness Detection System
+Detect drowsiness in real-time using a webcam to promote road safety.
 
 Overview
-
-This system uses a webcam to monitor a driver's eyes and detects drowsiness based on the rate of eye blinking. If the eyes are closed for a prolonged period, a warning is issued to alert the driver.
+This system monitors a driver's eyes with a webcam, determining drowsiness based on the Eye Aspect Ratio (EAR). If the eyes remain closed beyond a threshold, the driver is alerted with a visual and audible warning.
 
 Requirements
-
 Python 3.x
-OpenCV (opencv-python)
-Webcam
-
+OpenCV
+dlib
+pyttsx3
+scipy
 Installation
-1.Clone the repository:git clone https://github.com/your_username/driver-drowsiness-detection.git
-cd driver-drowsiness-detection
-
-2.Install the required packages:
-pip install -r requirements.txt
-
+Clone the repository and navigate to its directory.
+Install the required packages using pip install -r requirements.txt.
 Usage
-Run the main script to start the drowsiness detection:python drowsiness_detection.py
+Ensure the shape_predictor_68_face_landmarks.dat file is in the correct directory or adjust its path in the code. Then, run the main script to initiate drowsiness detection.
 
 Features
-Real-time drowsiness detection using a webcam.
-Visual and audible alarms can be added when drowsiness is detected.
-Utilizes Haar Cascades to detect face and eyes efficiently.
+Real-time monitoring using a webcam.
+Accurate eye tracking with dlib's facial landmark detection.
+Visual and auditory alerts for detected drowsiness.
+Contributing
+Contributions are welcome! For significant modifications, please open an issue for discussion.
